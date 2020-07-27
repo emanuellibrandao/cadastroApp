@@ -1,17 +1,68 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Cadastro
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div> 
+    <ion-item>
+      <ion-label position="floating" >Nome</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-item>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Data de Nascimento</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" min="1994-03-14" max="2020-12-09"></ion-datetime>
+    </ion-item>
+
+    <ion-list>
+      <ion-radio-group value="genero">
+        <ion-list-header>
+          <ion-label>Gênero</ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>Masculino</ion-label>
+          <ion-radio slot="start" value="masculino"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Feminino</ion-label>
+          <ion-radio slot="start" value="feminino"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+    <ion-item>
+      <ion-label position="floating">Celular</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Confirmar Senha</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-button expand="full">Salvar</ion-button>
+    <ion-button expand="full">Voltar</ion-button> 
+
+  </div>
 </ion-content>
